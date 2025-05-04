@@ -1,0 +1,268 @@
+/* styles.css */
+body {
+  margin: 0;
+  background-color: #d4d0c8;
+  color: #000;
+  font-family: 'Courier New', monospace;
+  background-image: linear-gradient(90deg, #d4d0c8 50%, #c0c0c0 50%);
+  background-size: 40px 40px;
+  image-rendering: pixelated;
+}
+
+canvas#duck-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.window {
+  border: 3px solid #000;
+  background-color: #ffffff;
+  width: 90%;
+  max-width: 800px;
+  margin: 2rem auto;
+  box-shadow: 8px 8px 0 #808080;
+  padding: 1rem;
+  position: relative;
+  image-rendering: pixelated;
+}
+
+.window-grid {
+  background: #1a0033; /* глубокий фиолетовый фон */
+  padding: 2rem;
+  border: 2px dashed #ff00ff;
+  box-shadow: 0 0 12px #ff00ff66;
+  border-radius: 8px;
+}
+
+.window-grid div {
+  background: #e8d100; /* жёлтый контент */
+  color: #000;
+  padding: 1rem;
+  border-radius: 4px;
+  border: 2px solid #000;
+  box-shadow: 2px 2px 0 #000;
+  transition: transform 0.2s ease-in-out;
+}
+
+.window-grid div:hover {
+  transform: scale(1.03);
+  background: #ffff33;
+}
+
+
+.title-bar {
+  background-color: #000080;
+  color: #ffffff;
+  padding: 0.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-bottom: 2px solid #ffffff;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.title-bar::after {
+  content: '🪟';
+  position: absolute;
+  right: 0.75rem;
+  top: 0.25rem;
+  font-size: 1rem;
+}
+
+.button {
+  background-color: #c0c0c0;
+  border: 2px outset #fff;
+  padding: 0.4rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+  display: inline-block;
+  font-family: 'Courier New', monospace;
+  box-shadow: 2px 2px 0 #808080;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #ff00ff;
+  color: #fff;
+  box-shadow: 2px 2px 4px #000;
+}
+
+h1, h2, h3 {
+  font-family: 'Courier New', monospace;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+input, textarea {
+  background-color: #fff;
+  border: 2px inset #000;
+  font-family: 'Courier New', monospace;
+  padding: 0.3rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form label {
+  font-weight: bold;
+  display: block;
+  margin: 0.5rem 0 0.2rem;
+}
+
+/* Кринжовая бегущая строка */
+.marquee-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #000;
+  color: #0f0;
+  font-size: 0.75rem;
+  font-family: monospace;
+  border-top: 2px solid #0f0;
+  z-index: 9999;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-bar span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 20s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* BIOS загрузка */
+#bios-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  color: #00ff00;
+  font-family: monospace;
+  font-size: 1rem;
+  padding: 2rem;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  line-height: 1.6;
+}
+
+#bios-screen.hidden {
+  display: none;
+}
+
+    @keyframes dots {
+      0% { content: ''; }
+      25% { content: '.'; }
+      50% { content: '..'; }
+      75% { content: '...'; }
+      100% { content: ''; }
+    }
+    .loading-line::after {
+      content: '';
+      animation: dots 1s steps(4, end) infinite;
+    }
+    #real-section {
+      background: #ffffff;
+      padding: 3rem 2rem;
+      font-family: sans-serif;
+      max-width: 800px;
+      margin: 5rem auto;
+      border-top: 4px dashed #ccc;
+    }
+    #real-section h2 {
+      margin-top: 0;
+    }
+    #real-section ul {
+      padding-left: 1.2rem;
+    }
+    #flow-section {
+      background: #000;
+      color: #0f0;
+      font-family: monospace;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      overflow: hidden;
+    }
+    #flow-section h2 {
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+    }
+    .flow-steps {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+    }
+    .flow-step {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.6s ease-out;
+      border: 1px solid #0f0;
+      padding: 1rem;
+      max-width: 200px;
+      background: #111;
+    }
+    .flow-step.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .flow-step span {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      background: #0f0;
+      color: #000;
+      font-weight: bold;
+      border-radius: 50%;
+      margin-bottom: 0.5rem;
+    }
+    #logos-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      padding: 2rem;
+      margin-bottom: 4rem;
+    }
+    #logos-section img {
+      width: 48px;
+      height: 48px;
+      image-rendering: pixelated;
+    }
