@@ -1,0 +1,156 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MEGA TECHNO TRON3000</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="main.js" defer></script>
+  <style>
+    @keyframes dots {
+      0% { content: ''; }
+      25% { content: '.'; }
+      50% { content: '..'; }
+      75% { content: '...'; }
+      100% { content: ''; }
+    }
+    .loading-line::after {
+      content: '';
+      animation: dots 1s steps(4, end) infinite;
+    }
+    #real-section {
+      background: #ffffff;
+      padding: 3rem 2rem;
+      font-family: sans-serif;
+      max-width: 800px;
+      margin: 5rem auto;
+      border-top: 4px dashed #ccc;
+    }
+    #real-section h2 {
+      margin-top: 0;
+    }
+    #real-section ul {
+      padding-left: 1.2rem;
+    }
+    footer {
+      background: #000;
+      color: #0f0;
+      text-align: center;
+      padding: 2rem;
+      font-family: monospace;
+      font-size: 0.9rem;
+      border-top: 2px solid #0f0;
+    }
+     canvas#duck-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="bios-screen">
+    <pre>
+MEGA TECHNO TRON v0.11.7
+Copyright (C) 1988-2999
+
+Initializing AI<span class="loading-line"></span>
+Detecting workflow problems<span class="loading-line"></span>
+Launching system core<span class="loading-line"></span>
+    </pre>
+  </div>
+
+  <canvas id="duck-canvas" style="position: fixed; top: 0; left: 0; z-index: 999;"></canvas>
+
+  <div class="window">
+    <div class="title-bar">[ TITLE.rar ]</div>
+    <h1>🤖 MEGA TECHNO TRON 3000</h1>
+    <p><strong>Welcome to the end of your manual labor</strong></p>
+    <div class="button">Automate Your Workflows</div><p>[preferably before they automate you]</p>
+  </div>
+  
+  <div class="window">
+    <div class="title-bar">[ WHO_WE_ARE.dll ]</div>
+    <p>We’re two tech guys tired of boring workflows. We have 12+ years of experience each. No suits. Just AI, automation, and workflow smoothness.</p>
+  </div>
+  
+  <div class="window">
+    <div class="title-bar">[ WHAT_WE_DO.exe ]</div>
+    <div class="grid">
+      <div>
+        <h2>💉 Embedding AI</h2>
+        <p>We embed intelligence into your business workflows. Even if you're running 400 Google Sheet tabs or other non-scalable stuff.</p>
+      </div>
+      <div>
+        <h2>🧠 Brutal Automation</h2>
+        <p>AI does the job - from talking to your customers to predictive analytics. So you can sip your mate. Or build an empire.</p>
+      </div>
+      <div>
+        <h2>⚙️ System Assembly</h2>
+        <p>APIs, webhooks, auto-triggers. If it can be linked — we’ll connect it. So have a holistic view on your business and can actually run it, not micromanage.</p>
+      </div>
+      <div>
+        <h2>🧰 Custom Builds</h2>
+        <p>Know about AI but have no idea how to implement it? We'll invent and build for you.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="window">
+    <div class="title-bar">[ HOW_IT_WORKS.bat ]</div>
+    <div class="window-grid">
+      <div>
+        <h2>[1] You're stuck in chaos</h2>
+        <p>Endless tasks. Repeated manual clicks. Tools all over the place. We’ve all been there.</p>
+      </div>
+      <div>
+        <h2>[2] We dig through your mess</h2>
+        <p>We analyze your workflows and detect what AI + automation can solve instantly.</p>
+      </div>
+      <div>
+        <h2>[3] You get a working system</h2>
+        <p>No more spreadsheets and duct tape. You get integrated, scalable operations.</p>
+      </div>
+      <div>
+        <h2>[FINAL] Why it matters</h2>
+        <p>Your time is too expensive to waste on repetition. We make sure your business runs like a machine.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="window">
+    <div class="title-bar">[ CONTACT_PORT.exe ]</div>
+    <p>Ready to plug in AI?</p>
+    <form>
+      <label for="email">🛰️ Your Email:</label><br />
+      <input type="email" id="email" name="email" /><br />
+      <label for="msg">🔧 What needs to be automated:</label><br />
+      <textarea id="msg" name="msg" rows="4" cols="40"></textarea><br />
+      <div class="button">Send</div>
+    </form>
+  </div>
+
+  <div class="marquee-bar"><span>AI is not coming. It's already here. Either you automate, or get automated. The choice is yours.</span></div>
+
+  <section id="real-section">
+    <h2>Okay, real talk 👇</h2>
+    <p>Yes, this site looks like a 90s fever dream. That's for a reason.</p>
+    <ul>
+      <li>We glad you are reading this — you get the joke.</li>
+      <li>We believe AI doesn’t have to be wrapped in buzzwords, salesy and B2B jargon.</li>
+      <li>We want to work with founders and managers who are done with complexity, bottlenecks, and human factor.</li>
+      <li>We build real automation systems using AI, no-code, and custom integrations.</li>
+      <li>Let’s talk like humans. No pitch decks, just problems and solutions.</li>
+    </ul>
+    <p><strong>Sincerely yours</strong></p>
+  </section>
+
+  <footer>
+  <p>© 2999 MEGA TECHNO TRON3000 | Built with caffeine, chaos, and <code>ctrl+alt+delete</code></p>
+  <img src="https://i.pinimg.com/originals/85/00/3b/85003b8e414d2708f18fcb0fd1ccecf0.png" alt="retro logo" style="width: 100px; margin-top: 1rem;" />
+</footer>
+</body>
+</html>
