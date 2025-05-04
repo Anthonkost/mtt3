@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
   canvas.style.pointerEvents = 'none';
 
   const duckImg = new Image();
-  duckImg.src = 'https://i.pinimg.com/originals/85/00/3b/85003b8e414d2708f18fcb0fd1ccecf0.png';
+  duckImg.src = '/duck.png';
 
   let duckX = -100;
   let duckY = 80;
