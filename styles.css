@@ -86,6 +86,8 @@ canvas#duck-canvas {
   font-family: 'Courier New', monospace;
   box-shadow: 2px 2px 0 #808080;
   text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
 }
 
 .button:hover {
