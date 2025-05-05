@@ -68,7 +68,7 @@ canvas#duck-canvas {
 }
 
 .title-bar::after {
-  content: '🪟';
+  content: '💾';
   position: absolute;
   right: 0.75rem;
   top: 0.25rem;
