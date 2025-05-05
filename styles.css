@@ -32,7 +32,7 @@ canvas#duck-canvas {
 }
 
 .window-grid {
-  background: #1a0033; /* глубокий фиолетовый фон */
+  background: #1a0033;
   padding: 2rem;
   border: 2px dashed #ff00ff;
   box-shadow: 0 0 12px #ff00ff66;
@@ -40,7 +40,7 @@ canvas#duck-canvas {
 }
 
 .window-grid div {
-  background: #e8d100; /* жёлтый контент */
+  background: #e8d100;
   color: #000;
   padding: 1rem;
   border-radius: 4px;
@@ -68,7 +68,7 @@ canvas#duck-canvas {
 }
 
 .title-bar::after {
-  content: '💾';
+  content: '📂';
   position: absolute;
   right: 0.75rem;
   top: 0.25rem;
