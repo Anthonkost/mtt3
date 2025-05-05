@@ -270,3 +270,13 @@ form label {
       height: 48px;
       image-rendering: pixelated;
     }
+
+    .win95-bar {
+      background-color: #000080;
+      color: #fff;
+      font-family: monospace;
+      font-size: 14px;
+      padding: 0.5rem 1rem;
+      border-top: 2px solid #fff;
+      border-bottom: 2px solid #000;
+    }
