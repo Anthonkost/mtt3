@@ -207,6 +207,10 @@ form label {
     }
     #real-section ul {
       padding-left: 1.2rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      list-style-type: disc;
     }
     #flow-section {
       background: #000;
