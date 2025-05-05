@@ -121,4 +121,43 @@ document.addEventListener('DOMContentLoaded', () => {
       initDuck();
     };
   }
+  
+// Sticky BIOS-style CTA button in bottom-right
+  const isItRealWrapper = document.createElement('div');
+  isItRealWrapper.style.position = 'fixed';
+  isItRealWrapper.style.bottom = '20px';
+  isItRealWrapper.style.right = '20px';
+  isItRealWrapper.style.zIndex = '1000';
+
+  const isItRealBtn = document.createElement('button');
+  isItRealBtn.innerText = 'Is it real?';
+  isItRealBtn.style.backgroundColor = '#0000aa';
+  isItRealBtn.style.color = '#fff';
+  isItRealBtn.style.border = '2px solid #fff';
+  isItRealBtn.style.fontFamily = 'monospace';
+  isItRealBtn.style.padding = '6px 12px';
+  isItRealBtn.style.cursor = 'pointer';
+  isItRealBtn.style.display = 'block';
+  
+
+  const isItRealText = document.createElement('div');
+  isItRealText.innerText = 'Yes. This is no joke, even though it might look like one. We really help businesses automate their workflows by implementing AI.';
+  isItRealText.style.background = '#000';
+  isItRealText.style.color = '#0f0';
+  isItRealText.style.fontFamily = 'monospace';
+  isItRealText.style.fontSize = '12px';
+  isItRealText.style.marginTop = '8px';
+  isItRealText.style.padding = '8px';
+  isItRealText.style.border = '1px solid #0f0';
+  isItRealText.style.display = 'none';
+  isItRealText.style.transition = 'opacity 0.3s ease';
+
+  isItRealBtn.addEventListener('click', () => {
+    isItRealText.style.display = isItRealText.style.display === 'none' ? 'block' : 'none';
+  });
+
+  isItRealWrapper.appendChild(isItRealBtn);
+  isItRealWrapper.appendChild(isItRealText);
+  document.body.appendChild(isItRealWrapper);
+  
 });
