@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const bios = document.getElementById('bios-screen');
   setTimeout(() => {
     bios.classList.add('hidden');
-  }, 3000);
+  }, 1000);
 
   const buttons = document.querySelectorAll('.button');
   buttons.forEach(btn => {
