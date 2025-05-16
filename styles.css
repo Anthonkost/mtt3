@@ -128,6 +128,13 @@ input, textarea {
   box-sizing: border-box;
 }
 
+.project-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
 form label {
   font-weight: bold;
   display: block;
