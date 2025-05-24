@@ -22,7 +22,7 @@ canvas#duck-canvas {
 
 /* Header */
 :root {
-  --win95-grey: #c3c7cb;
+  --win95-grey: #d4d0c8;
   --win95-light-grey: #c0c0c0;
   --win95-dark-grey: #828282;
   --win95-blue: #008080;
@@ -34,9 +34,9 @@ canvas#duck-canvas {
   top: 0; left: 0;
   width: 100vw;
   z-index: 1000;
-  background: var(--win95-grey);
+  /* background: var(--win95-grey);
   border-bottom: 3px solid var(--win95-border);
-  box-shadow: 0 2px 0 0 var(--win95-dark-grey), 0 4px 12px 0 rgba(0,0,0,0.08);
+  box-shadow: 0 2px 0 0 var(--win95-dark-grey), 0 4px 12px 0 rgba(0,0,0,0.08); */
 }
 .mtt3-header__container {
   display: flex;
