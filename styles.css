@@ -142,7 +142,7 @@ canvas#duck-canvas {
     gap: 0.1rem;
   }
   .mtt3-header__burger {
-    display: flex;
+    display: none;
   }
   .mtt3-header__nav {
     position: fixed;
