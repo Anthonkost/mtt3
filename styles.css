@@ -197,6 +197,7 @@ canvas#duck-canvas {
   padding: 1rem;
   position: relative;
   image-rendering: pixelated;
+  scroll-margin-top: 72px;
 }
 
 .window-grid {
