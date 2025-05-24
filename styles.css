@@ -91,7 +91,7 @@ canvas#duck-canvas {
   background: var(--win95-light-grey);
   box-shadow: 1px 2px 0 var(--win95-dark-grey);
   margin-left: 0.2rem;
-  text-shadow: 1px 1px 0 #fff;
+ /* text-shadow: 1px 1px 0 #fff;*/
 }
 .mtt3-header__nav a:hover {
   background: var(--win95-blue);
