@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const isItRealBtn = document.createElement('button');
   isItRealBtn.innerText = 'Is it real?';
-  isItRealBtn.style.backgroundColor = '#0000aa';
+  isItRealBtn.style.backgroundColor = '#008080';
   isItRealBtn.style.color = '#fff';
   isItRealBtn.style.border = '2px solid #fff';
   isItRealBtn.style.fontFamily = 'monospace';
