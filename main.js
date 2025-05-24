@@ -124,18 +124,6 @@ document.addEventListener('DOMContentLoaded', () => {
   
 
 //header background
-  window.addEventListener('DOMContentLoaded', function () {
-    var header = document.querySelector('.mtt3-header');
-    function checkScroll() {
-      if (window.scrollY < 24) {
-        header.classList.add('bg-hidden');
-      } else {
-        header.classList.remove('bg-hidden');
-      }
-    }
-    checkScroll();
-    window.addEventListener('scroll', checkScroll);
-  });
 
 
 // Sticky BIOS-style CTA button in bottom-right

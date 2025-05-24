@@ -37,17 +37,17 @@ canvas#duck-canvas {
   background: var(--win95-grey);
   border-bottom: 3px solid var(--win95-border);
   box-shadow: 0 2px 0 0 var(--win95-dark-grey), 0 4px 12px 0 rgba(0,0,0,0.08);
-  transition: background 0.25s, box-shadow 0.25s, border-bottom 0.25s;
+  /*transition: background 0.25s, box-shadow 0.25s, border-bottom 0.25s;*/
 
 }
-
+/*
 .mtt3-header.bg-hidden {
   background: transparent !important;
   box-shadow: none !important;
   border-bottom: none !important;
   transition: background 0.25s, box-shadow 0.25s, border-bottom 0.25s;
 }
-
+*/
 .mtt3-header__container {
   display: flex;
   align-items: center;
