@@ -165,3 +165,25 @@ document.addEventListener('DOMContentLoaded', () => {
   document.body.appendChild(isItRealWrapper);
   
 });
+
+//modal window
+  document.querySelectorAll('a.open-in-modal').forEach(function(link) {
+    link.addEventListener('click', function(e){
+      e.preventDefault();
+      document.getElementById('pdf-frame').src = this.href;
+      document.getElementById('pdf-modal').style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    });
+  });
+  document.getElementById('close-pdf-btn').onclick = function() {
+    document.getElementById('pdf-modal').style.display = 'none';
+    document.getElementById('pdf-frame').src = '';
+    document.body.style.overflow = '';
+  };
+  document.getElementById('pdf-modal').onclick = function(e) {
+    if(e.target === this) {
+      this.style.display = 'none';
+      document.getElementById('pdf-frame').src = '';
+      document.body.style.overflow = '';
+    }
+  }
