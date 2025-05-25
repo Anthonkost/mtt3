@@ -80,8 +80,20 @@ Launching system core<span class="loading-line"></span>
       <a href="#process">How it Works</a>
       <a href="#cases">Cases</a>
     </nav>
-    <a href="https://cal.com/mtt3000/ai-patch-preview-call" target="_blank" class="mtt3-header__cta">RUN_AUDIT.exe</a>
+    <a href="https://cal.com/mtt3000/ai-patch-preview-call" class="mtt3-header__cta open-in-modal">RUN_AUDIT.exe</a>
   </div>
+
+   <!-- calcom modal -->
+<div id="pdf-modal" class="win95-modal">
+  <div class="win95-modal-content">
+    <div class="win95-titlebar">
+      <span>[ AUDIT_SCHEDULER.exe ]</span>
+      <button id="close-pdf-btn" class="win95-close-btn">&times;</button>
+    </div>
+    <iframe id="pdf-frame" src=""></iframe>
+  </div>
+</div>
+
 </header>
 
   <canvas id="duck-canvas" style="position: fixed; top: 0; left: 0; z-index: 999;"></canvas>
@@ -190,17 +202,7 @@ Launching system core<span class="loading-line"></span>
       <button type="submit" class="button">Send Ping</button>
            <br>
            <p style="font-size: 0.7rem; color: #000080; font-family: monospace;">> You'll get a free 1-page automation plan for your business.</p>
-           <a href="/assets/mega_audit_report_sample.pdf" class="open-in-modal">VIEW_REPORT.txt</a>
-           <!-- modal -->
-<div id="pdf-modal" class="win95-modal">
-  <div class="win95-modal-content">
-    <div class="win95-titlebar">
-      <span>[ AUDIT_REPORT.txt ]</span>
-      <button id="close-pdf-btn" class="win95-close-btn">&times;</button>
-    </div>
-    <iframe id="pdf-frame" src=""></iframe>
-  </div>
-</div>
+           <a href="/assets/mega_audit_report_sample.pdf" target="_blank">VIEW_REPORT.txt</a>
       </form>
   </div> 
 
