@@ -276,6 +276,7 @@ Launching system core<span class="loading-line"></span>
   </div>
 </div>
   
+
   <footer>
   <p>© 2025 - MEGA TECHNO TRON 3000 | Built with irony and <code>a sense of the point of no return.</code></p>
     <p>Brutal business automations with AI via <a href="https://aspiratio.tech/" style="color: #00bfff; cursor: pointer;" target="_blank">Aspiratio Labs</a> | <a href="/privacy" style="color: #00bfff; cursor: pointer;" target="_blank">Privacy Policy</a></p>
@@ -284,5 +285,54 @@ Launching system core<span class="loading-line"></span>
   > CONTACT: <a href="mailto:root@mtt3000.com" style="color: #00bfff; cursor: pointer;">root@mtt3000.com</a> [re: AI_AUDIT]
   </p>
 </footer>
+
+<!-- cookie banner-->
+<style>
+  #cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000080;
+    color: #fff;
+    font-family: monospace;
+    font-size: 12px;
+    padding: 6px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+    box-shadow: 0 -1px 4px rgba(0,0,0,0.3);
+  }
+
+  #cookie-banner button {
+    background: #f4f4f4;
+    color: #000;
+    border: none;
+    font-family: monospace;
+    font-size: 12px;
+    padding: 3px 8px;
+    cursor: pointer;
+  }
+</style>
+
+<div id="cookie-banner">
+  <span>This site uses Smartlook for minimal analytics. <a href="/privacy" style="color: #fff; text-decoration: underline;">Privacy Policy</a></span>
+  <button onclick="acceptCookies()">OK</button>
+</div>
+
+<script>
+  function acceptCookies() {
+    sessionStorage.setItem('cookiesAccepted', 'true');
+    document.getElementById('cookie-banner').style.display = 'none';
+  }
+
+  window.addEventListener('DOMContentLoaded', () => {
+    if (sessionStorage.getItem('cookiesAccepted')) {
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+  });
+</script>
+
 </body>
 </html>
