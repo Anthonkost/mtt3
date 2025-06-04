@@ -589,7 +589,9 @@ form label {
 .breadcrumbs {
   font-family: 'Courier New', monospace;
   font-size: 0.9rem;
-  margin: 0.5rem 0 1rem 1rem;
+  width: 90%;
+  max-width: 800px;
+  margin: 0.5rem auto 1rem auto;
 }
 .back-link {
   color: #181818;
