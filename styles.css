@@ -586,10 +586,6 @@ form label {
 }
 
 /* breadcrumbs and back button */
-.service-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
 .breadcrumbs {
   font-family: 'Courier New', monospace;
   font-size: 0.9rem;
