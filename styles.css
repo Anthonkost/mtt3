@@ -592,17 +592,19 @@ form label {
   margin: 0.5rem 0 1rem 1rem;
 }
 .back-link {
-  background: var(--win95-light-grey);
-  border: 2px outset var(--win95-border);
-  padding: 0.3rem 0.8rem;
-  font-weight: bold;
+  color: #181818;
   text-decoration: none;
-  color: #000;
-  box-shadow: 2px 2px 0 var(--win95-dark-grey);
-  margin-right: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background .16s, box-shadow .16s, color .16s;
+  padding: 4px 16px;
+  border: 2px outset var(--win95-border);
+  background: var(--win95-light-grey);
+  box-shadow: 1px 2px 0 var(--win95-dark-grey);
+  margin-left: 0.2rem;
 }
 .back-link:hover {
   background: var(--win95-blue);
   color: #fff;
-  box-shadow: 2px 2px 4px #000;
+  box-shadow: 2px 3px 0 var(--win95-blue-btn), 0 0 3px #0002;
 }
