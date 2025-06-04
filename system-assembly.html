@@ -1,0 +1,181 @@
+<!-- system-assembly.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MEGA TECHNO TRON 3000 - System Assembly</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="main.js" defer></script>
+  <style>
+    @keyframes dots {
+      0% { content: ''; }
+      25% { content: '.'; }
+      50% { content: '..'; }
+      75% { content: '...'; }
+      100% { content: ''; }
+    }
+    .loading-line::after {
+      content: '';
+      animation: dots 1s steps(4, end) infinite;
+    }
+    footer {
+      background: #000;
+      color: #0f0;
+      text-align: center;
+      padding: 2rem;
+      font-family: monospace;
+      font-size: 0.9rem;
+      border-top: 2px solid #0f0;
+    }
+     canvas#duck-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="bios-screen">
+    <pre>
+MEGA TECHNO TRON 3000 v0.11.7
+Copyright (C) 1988-2025
+via Aspiratio Labs
+
+Initializing AI<span class="loading-line"></span>
+Detecting workflow problems<span class="loading-line"></span>
+Launching system core<span class="loading-line"></span>
+    </pre>
+  </div>
+
+  <header class="mtt3-header">
+    <div class="mtt3-header__container">
+      <span class="mtt3-header__logo">
+        <img src="assets/mtt-logo.svg" alt="mttM3000 logo" style="height: 34px; vertical-align: middle; display: inline-block; margin-right: 10px; margin-bottom:2px;">
+      </span>
+      <input type="checkbox" id="mtt3-menu-toggle" class="mtt3-header__toggle" />
+      <label for="mtt3-menu-toggle" class="mtt3-header__burger" tabindex="0" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="mtt3-header__nav">
+        <a href="/">Home</a>
+        <a href="/#process">How it Works</a>
+        <a href="/#cases">Cases</a>
+      </nav>
+      <a href="https://cal.com/mtt3000/ai-patch-preview-call" class="mtt3-header__cta open-in-modal">BOOK AUDIT</a>
+    </div>
+
+   <!-- calcom modal -->
+<div id="pdf-modal" class="win95-modal">
+  <div class="win95-modal-content">
+    <div class="win95-titlebar">
+      <span>[ AUDIT_SCHEDULER.exe ]</span>
+      <button id="close-pdf-btn" class="win95-close-btn">&times;</button>
+    </div>
+    <iframe id="pdf-frame" src=""></iframe>
+  </div>
+</div>
+
+</header>
+
+  <canvas id="duck-canvas" style="position: fixed; top: 0; left: 0; z-index: 999;"></canvas>
+
+  <div class="window">
+    <div class="title-bar">[ SYSTEM_ASSEMBLY.exe ]</div>
+    <h1>System Assembly</h1>
+    <p>We review your current tools and build integrations with auto-triggers for smoother processes.</p>
+    <a class="button open-in-modal" href="https://cal.com/mtt3000/ai-patch-preview-call">Book audit call</a>
+  </div>
+
+<div class="win95-bar">
+  <div class="scroll-container">
+    <div class="scroll-content">
+      <span>ChatGPT</span>
+      <span>Gemini</span>
+      <span>Whisper</span>
+      <span>n8n</span>
+      <span>Zapier</span>
+      <span>Airtable</span>
+      <span>Trello</span>
+      <span>Google Sheets</span>
+      <span>Excel</span>
+      <span>HubSpot</span>
+      <span>Gmail</span>
+      <span>CRM</span>
+      <span>Copilot</span>
+      <span>Cursor</span>
+      <span>Jasper</span>
+      <span>Chatfuel</span>
+      <span>Google Analytics</span>
+      <span>Meta Ads Library</span>
+      <span>Facebook Ads</span>
+      <span>Claude</span>
+      <span>Perplexity</span>
+      <span>Midjourney</span>
+      <span>ElevenLabs</span>
+    </div>
+  </div>
+</div>
+
+  <footer>
+  <p>© 2025 - MEGA TECHNO TRON 3000 | Built with irony and <code>a sense of the point of no return.</code></p>
+    <p>Brutal business automations with AI via <a href="https://aspiratio.tech/" style="color: #00bfff; cursor: pointer;" target="_blank">Aspiratio Labs</a> | <a href="/privacy" style="color: #00bfff; cursor: pointer;" target="_blank">Privacy Policy</a></p>
+  <img src="/duck.png" alt="retro duck" style="width: 100px; margin-top: 1rem;"/>
+  <p style="font-family: monospace; font-size: 14px; color: #cc00ff;">
+  > CONTACT: <a href="mailto:root@mtt3000.com" style="color: #00bfff; cursor: pointer;">root@mtt3000.com</a> [re: AI_AUDIT]
+  </p>
+</footer>
+
+<!-- cookie banner-->
+<style>
+  #cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000080;
+    color: #fff;
+    font-family: monospace;
+    font-size: 12px;
+    padding: 6px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+    box-shadow: 0 -1px 4px rgba(0,0,0,0.3);
+  }
+
+  #cookie-banner button {
+    background: #f4f4f4;
+    color: #000;
+    border: none;
+    font-family: monospace;
+    font-size: 12px;
+    padding: 3px 8px;
+    cursor: pointer;
+  }
+</style>
+
+<div id="cookie-banner">
+  <span>This site uses Smartlook for minimal analytics. When continue using the site you agree to our <a href="/privacy" style="color: #fff; text-decoration: underline;">Privacy Policy</a></span>
+  <button onclick="acceptCookies()">OK</button>
+</div>
+
+<script>
+  function acceptCookies() {
+    sessionStorage.setItem('cookiesAccepted', 'true');
+    document.getElementById('cookie-banner').style.display = 'none';
+  }
+
+  window.addEventListener('DOMContentLoaded', () => {
+    if (sessionStorage.getItem('cookiesAccepted')) {
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+  });
+</script>
+
+</body>
+</html>
