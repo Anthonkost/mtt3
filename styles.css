@@ -525,6 +525,13 @@ form label {
   font-family: 'MS Sans Serif', 'Arial', sans-serif;
 }
 
+/*service content wrapper */
+.service-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
 /* win95 window */
 .win95-modal-content {
   background: #fff;
