@@ -584,3 +584,25 @@ form label {
   margin: 0 auto;
   display: block;
 }
+
+/* breadcrumbs and back button */
+.breadcrumbs {
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  margin: 0.5rem 0 1rem 1rem;
+}
+.back-link {
+  background: var(--win95-light-grey);
+  border: 2px outset var(--win95-border);
+  padding: 0.3rem 0.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  box-shadow: 2px 2px 0 var(--win95-dark-grey);
+  margin-right: 0.5rem;
+}
+.back-link:hover {
+  background: var(--win95-blue);
+  color: #fff;
+  box-shadow: 2px 2px 4px #000;
+}
